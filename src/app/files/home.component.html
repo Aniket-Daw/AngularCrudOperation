@@ -1,0 +1,33 @@
+<h1> <u>User Details</u> </h1>
+
+
+<div class="row" style="padding-bottom:100px">
+<div class="col-md-1"> </div>
+<div class="col-md-10"> 
+   <div style="padding:50px 0px 5px 0px;text-align:right">
+      <!-- <button routerLink="/piechart"> Go to Pie Chart </button> -->
+      <button (click)="gotopieChart()"> Go to Pie Chart </button>
+    </div> 
+
+<table class="homeTable">
+      <tr>
+         <th> ID </th>
+         <th> UserId </th>
+         <th> Title </th>
+         <th> Message </th>
+      </tr>
+      <tr *ngFor="let employee of employees; let i = index">
+           <!-- <td> {{i+1}} </td> -->
+           <td *ngIf="i<15"> {{employee.id}} </td>
+           <td *ngIf="i<15"> {{employee.userId}} </td>
+           <td *ngIf="i<15"> {{employee.title}} </td>
+           <td *ngIf="i<15"> {{employee.body}} </td>
+      </tr>
+      </table>
+</div>
+<div class="col-md-1"> </div>
+</div>
+
+
+ 
+
